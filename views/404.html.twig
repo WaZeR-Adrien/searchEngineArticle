@@ -1,0 +1,10 @@
+{% extends '/layouts/main.html.twig' %}
+{% block titlePage %} Erreur 404 {% endblock %}
+{% block bg %}wallpaper-nova-vs-arthas.jpg{% endblock %}
+{% block pathJs %} <script src="{{ js }}error.js"></script> {% endblock %}
+
+{% block body %}
+    <div id="error404" class="col-md-12">
+        Sorry but this page doesn't exist.
+    </div>
+{% endblock %}
