@@ -14,6 +14,7 @@ class Home
             $response = file_get_contents($url);
         }*/
 
+        Article::getByKeyword('play');
         $array = [
             /*'keyword' => json_decode($response)*/
         ];
