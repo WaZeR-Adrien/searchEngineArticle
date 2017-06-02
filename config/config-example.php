@@ -16,6 +16,6 @@ define('MODELS_PATH',ROOT_PATH.'models/');
 define('VIEW_PATH',ROOT_PATH.'views/');
 
 // Options
-define('SITE_NAME', 'name here');
+define('SITE_NAME', 'Search Engine');
 define('CACHE', false);
 define('DEBUG', true);

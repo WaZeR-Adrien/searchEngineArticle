@@ -1,5 +1,5 @@
 <?php
-namespace Project\Config;
+namespace SearchEngine\Config;
 
 class Autoloader
 {

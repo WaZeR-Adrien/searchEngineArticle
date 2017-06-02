@@ -1,13 +1,12 @@
 <?php
-namespace Project\Controllers\Home;
+namespace SearchEngine\Controllers\Home;
+use SearchEngine\Models\Article\Article;
 
 class Home
 {
     public static function index($twig)
     {
-        $array = [
-            'welcome' => 'Hello, welcome at all :)'
-        ];
+        $array = [];
 
         return $twig->render('home.html.twig', $array);
     }

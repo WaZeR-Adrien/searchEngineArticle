@@ -1,5 +1,5 @@
 <?php
-namespace Project\Controllers\Tools;
+namespace SearchEngine\Controllers\Tools;
 
 class Reg
 {

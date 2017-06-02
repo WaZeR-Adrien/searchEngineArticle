@@ -1,5 +1,5 @@
 <?php
-namespace Project\Config;
+namespace SearchEngine\Config;
 
 class Router
 {
@@ -20,9 +20,9 @@ class Router
     public function getController()
     {
         if (is_null($this->_branch)) {
-            return call_user_func(array('\Project\Controllers\\' . ucfirst($this->_page), 'index'), $this->_twig);
+            return call_user_func(array('\SearchEngine\Controllers\\' . ucfirst($this->_page), 'index'), $this->_twig);
         } else {
-            return call_user_func(array('\Project\Controllers\\' . ucfirst($this->_branch) . '\\' . ucfirst($this->_page), 'index'), $this->_twig);
+            return call_user_func(array('\SearchEngine\Controllers\\' . ucfirst($this->_branch) . '\\' . ucfirst($this->_page), 'index'), $this->_twig);
         }
     }
 

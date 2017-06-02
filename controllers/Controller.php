@@ -1,5 +1,5 @@
 <?php
-namespace Project\Controllers;
+namespace SearchEngine\Controllers;
 
 class Controller
 {
