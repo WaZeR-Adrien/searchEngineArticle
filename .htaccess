@@ -9,6 +9,8 @@ RewriteRule	^home/?$	?b=home&p=home	[L]
 
 # API
 RewriteRule ^api/article/?$ ?b=article&p=article&api=true [L]
+RewriteRule ^api/article/keyword/?$ ?b=article&p=article&api=true [L]
+RewriteRule ^api/article/keyword/([a-zA-Zéèâôûç0-9?!]+)/?$ ?b=article&p=article&api=true&keyword=$1 [L]
 RewriteRule ^api/article/id/([0-9]+)/?$ ?b=article&p=article&api=true&id=$1 [L]
 RewriteRule ^api/keyword/?$ ?b=article&p=keyword&api=true [L]
 RewriteRule ^api/keyword/id/([0-9]+)/?$ ?b=article&p=keyword&api=true&id=$1 [L]

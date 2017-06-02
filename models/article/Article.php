@@ -13,4 +13,14 @@ class Article
             return Database::query('SELECT * FROM article');
         }
     }
+
+    public static function getByKeyword($keyword)
+    {
+        return Database::query(
+            'SELECT * FROM article, assigned, keyword
+                      WHERE assigned.article_id = article.id
+                      AND assigned.keyword_id = keyword.id
+                      AND keyword.word = ?', [$keyword]
+        );
+    }
 }
