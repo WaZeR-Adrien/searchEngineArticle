@@ -185,3 +185,18 @@ hr.clear { clear: both; visibility: hidden; }
     width: 70%;
     margin: 75px auto;
 }
+
+.articles .row-fluid {
+    background: #dfdfdf;
+    color: #1d1d1d;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.articles .row-fluid:nth-child(2n) { background: #bcbcbc; }
+
+.articles .row-fluid:hover {
+    cursor: pointer;
+    background: #ffae43;
+    transition: all 0.3s;
+}
