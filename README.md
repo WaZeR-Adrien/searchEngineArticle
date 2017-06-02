@@ -1,2 +1,2 @@
-# Search Engine for website actuality (or other)
+# Search Engine for news site (or other)
 PHP / MVC

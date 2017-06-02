@@ -2,14 +2,14 @@
 namespace SearchEngine\Models\Article;
 use SearchEngine\Config\Database;
 
-class Article
+class Assigned
 {
     public static function get($id = null)
     {
         if (empty($id)) {
-            return Database::query('SELECT * FROM article');
+            return Database::query('SELECT * FROM assigned');
         } else {
-            return Database::getById($id, 'article');
+            return Database::getById($id, 'assigned');
         }
     }
 }
