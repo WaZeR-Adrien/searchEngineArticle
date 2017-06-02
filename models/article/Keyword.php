@@ -4,12 +4,13 @@ use SearchEngine\Config\Database;
 
 class Keyword
 {
-    public static function get($id = null)
+    public static function get($param = null)
     {
-        if (empty($id)) {
-            return Database::query('SELECT * FROM keyword');
+        if (!empty($param->id)) {
+            return Database::getById($param->id, 'keyword');
+
         } else {
-            return Database::getById($id, 'keyword');
+            return Database::query('SELECT * FROM keyword');
         }
     }
 }

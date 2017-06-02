@@ -4,12 +4,13 @@ use SearchEngine\Config\Database;
 
 class Article
 {
-    public static function get($id = null)
+    public static function get($param = null)
     {
-        if (empty($id)) {
-            return Database::query('SELECT * FROM article');
+        if (!empty($param->id)) {
+            return Database::getById($param->id, 'article');
+
         } else {
-            return Database::getById($id, 'article');
+            return Database::query('SELECT * FROM article');
         }
     }
 }
