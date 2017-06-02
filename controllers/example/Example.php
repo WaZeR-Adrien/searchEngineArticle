@@ -1,7 +1,7 @@
 <?php
-namespace Project\Controllers\Example;
+namespace SearchEngine\Controllers\Example;
 
-use Project\Controllers\Tools\Reg;
+use SearchEngine\Controllers\Tools\Reg;
 
 class Example extends Controller
 {
@@ -14,7 +14,7 @@ class Example extends Controller
     public static function index($twig)
     {
         $array = [
-            'example' => \Project\Models\Example::get()
+            'example' => \SearchEngine\Models\Example::get()
         ];
 
         if (!empty($_POST)) {
@@ -82,7 +82,7 @@ class Example extends Controller
     {
         if (!empty($datas))
         {
-            $example = new \Project\Models\Example($datas);
+            $example = new \SearchEngine\Models\Example($datas);
             $example->insert();
         }
     }

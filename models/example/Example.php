@@ -1,6 +1,6 @@
 <?php
-namespace Project\Models;
-use Project\Config\Database;
+namespace SearchEngine\Models;
+use SearchEngine\Config\Database;
 
 class Example
 {

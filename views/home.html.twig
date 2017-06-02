@@ -1,8 +1,9 @@
 {% extends 'layouts/main.html.twig' %}
-{% block titlePage %} title here {% endblock %}
-{% block metaPage %} meta desc here {% endblock %}
+{% block titlePage %} Welcome to Search Engine {% endblock %}
+{% block metaPage %} Search engine for article {% endblock %}
 {% block bg %}my-background.jpg{% endblock %}
 
 {% block body %}
-    {{ welcome }}
+    <input type="text" name="search" id="search" class="material-form form-control ripple"
+           placeholder="Search an article with keys words">
 {% endblock %}

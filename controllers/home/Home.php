@@ -1,5 +1,5 @@
 <?php
-namespace Project\Controllers\Home;
+namespace SearchEngine\Controllers\Home;
 
 class Home
 {

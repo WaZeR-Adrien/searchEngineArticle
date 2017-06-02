@@ -1,5 +1,5 @@
 <?php
-namespace HeroesTeam\Controllers\Error;
+namespace SearchEngine\Controllers\Error;
 
 class Error404
 {
